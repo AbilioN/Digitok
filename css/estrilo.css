@@ -1,0 +1,40 @@
+.cabecalho{
+    height: 300px;
+    
+    border: 1px solid red;
+}
+
+.bordamarela{
+
+    border: 2px solid yellow;
+}
+
+.bordar{
+
+    border: 2px solid red;
+}
+
+header{
+    background-color: blue;
+    height: 40px;
+}
+
+.div1{
+    border: 2px solid red;
+    height: 200px;
+    width: 200px;
+
+}
+
+.div2{
+    border: 2px solid yellow;
+    height: 200px;
+    width: 200px;
+    
+}
+.div3{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    
+}
