@@ -1,40 +1,44 @@
-.cabecalho{
-    height: 300px;
-    
-    border: 1px solid red;
-}
-
-.bordamarela{
-
-    border: 2px solid yellow;
-}
-
-.bordar{
-
-    border: 2px solid red;
-}
 
 header{
-    background-color: blue;
-    height: 40px;
+    background-color: rgb(41,21,116);
+    height: 50px;
+}
+.cabecalho_informacoes{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: flex-end;
+    align-content: flex-end;
+
 }
 
-.div1{
-    border: 2px solid red;
-    height: 200px;
-    width: 200px;
-
-}
-
-.div2{
-    border: 2px solid yellow;
-    height: 200px;
-    width: 200px;
+li{
+    margin: 8px; 
     
 }
-.div3{
-    border: 2px solid black;
-    height: 200px;
-    width: 200px;
-    
+.cabecalho_informacoes h5{
+    color: white;
+    font-size: 1em;
 }
+li h5 :hover{
+    color: rgb(244, 233, 3);
+    font-size: 1em;
+}
+.emailcabecalho{
+    display: flex;
+    justify-content: flex-end;
+}
+.emailcabecalho h6{
+    color: white;
+}
+.logomarca{
+    height: 250px;
+    width: 650px;
+    background-image: url(../imagens/digitoklogotipo.jpg);
+}
+span{
+    margin: 4px;
+}
+
+
+
+
