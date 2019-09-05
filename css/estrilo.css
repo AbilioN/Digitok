@@ -42,3 +42,11 @@ span{
 
 
 
+/* Fim das formatacoes do header */
+
+
+.menuprincipal{
+    display: flex;
+    flex-direction: row;
+    
+}
