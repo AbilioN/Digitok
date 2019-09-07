@@ -1,4 +1,10 @@
-
+*{
+    margin: 0;
+    padding : 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
 header{
     background-color: rgb(41,21,116);
     height: 50px;
@@ -10,6 +16,8 @@ header{
     align-content: flex-end;
 
 }
+
+
 
 li{
     margin: 8px; 
@@ -46,19 +54,89 @@ neste grid o nome das classes sera semelhante por conveniencia */
     padding: 0 20px;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
+    /* align-items: stretch; */
     /* Futuramente adaptar esse tamanho a imagem e responsividade */
     height: 260px;
-    border: 1px solid purple;
+    background-color: greenyellow;
+
+    border: 10px solid red;
 
 }
-    @media (min-width:1600px){
+    @media screen and (max-width:1600px){
         .conteiner{
-            max-width: 1600px;
+            max-width: 1500px;
             padding: 0;
+            
+        }
+    }
+    @media screen and (max-width:1140px){
+        .conteiner{
+            max-width: 1140px;
+            flex-wrap: wrap;
+            padding: 0;
+            flex-direction: row;
+           
+            height: 520px;
+            max-height: 520px;
+        }
+        .box{
+            
+        }
+        .menu{
+            display: inline-block;
+            position: relative;
+        }
+        .logomarca{
+        
+       
+            width: 900px;
+            height: 50%;
+            
         }
     }
 
+    @media screen and (max-width:960px){
+        .conteiner{
+            max-width: 900px;
+            padding: 0;
+            background-color:green;
+            max-height: 190px;
+        }
+    }
+
+    @media screen and (max-width:720px){
+        .conteiner{
+            max-width: 680px;
+            padding: 0;
+            background-color:purple;
+            max-height: 165px;
+        }
+    }
+    @media screen and (max-width:540px){
+        .conteiner{
+            max-width: 300px;
+            padding: 0;
+            background-color:rgb(206, 218, 45);
+            max-height: 100px;
+        }
+    }
+
+    .continer{
+        display:block;
+        width: 100%;
+        height:100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        
+        align-self:center;
+        justify-self: center;
+
+        flex-grow: 3;
+        flex-shrink: 3;
+    }
+/* linhas */
 .r0w{
     margin-left: -5px;
     margin-right: -5px;
@@ -70,27 +148,62 @@ neste grid o nome das classes sera semelhante por conveniencia */
         content: "";
         display: table; /*faz o elemento se comportar como <table>*/
     }
+    .r0w::after{
+        clear: both;
 
+    }
 
+/* colunas */
+.c0l{
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width:100%;
+    margin-right: -4px; /* pra compensar os 4px adicionados do inline block */
+
+}
+@media screen (min-width: 480px){
+    .c0l-02{
+        width: 50%;
+    }
+}
+@media screen(min-width: 720px){
+    .c0l-03{
+        width: 33.33333%;
+    }
+}
 
     /* Fim da edicao do grid */
 .logomarca{
-    height: 250px;
-    flex-grow: 2;
-    flex-shrink: 4;
+    height: 100%;
+    width: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: wrap;
   
 
 }
 .logomarca img{
     max-width: 100%;
     height: 100%;
+    
+    
    
 }
-.conteudo{
-    height: 250px;
+.menu{
+    display: flex;
+    position: absolute;
+    border: 2px solid black;
+}
+
+#conteudo{
+    display: flex;
+    height: 100%;
     flex-grow: 3;
-    flex-shrink: 6;
-    background-color: green;
+    flex-shrink: 4;
+    
 }
 #menu-principal{
     max-width: 70%;
@@ -102,6 +215,9 @@ neste grid o nome das classes sera semelhante por conveniencia */
     align-items: center;
 }
 .box{
+    justify-content: center;
+    align-items: center;
+    
     font-size:100%;
     color:white;
     padding:10px;
@@ -110,8 +226,10 @@ neste grid o nome das classes sera semelhante por conveniencia */
     text-align: center;
     font-weight: 300;
     box-sizing: border-box;
-    width: 400px;
-    
+    max-width: 150px;
+    max-height: 150px;
+    flex-grow: 1;
+    flex-shrink: 2;
 }
 .box-1{
     background-color: rgb(58, 144, 150);
