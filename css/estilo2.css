@@ -1,35 +1,146 @@
 *{
     margin:0;
     padding: 0;
-
     box-sizing: border-box;
-
+}
+header{
+    background-color: rgb(41,21,116);
+    height: 50px;
+}
+.cabecalho_informacoes{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: flex-end;
+    align-content: flex-end;
+}
+li{
+    margin: 8px; 
+}
+.cabecalho_informacoes h5{
+    color: white;
+    font-size: 1em;
+}
+li h5 :hover{
+    color: rgb(244, 233, 3);
+    font-size: 1em;
+}
+.emailcabecalho{
+    display: flex;
+    justify-content: flex-end;
+}
+.emailcabecalho h6{
+    color: white;
 }
 
-.main-container{
-    width: 100%;
-    height: auto;
-    margin:auto;
-    max-width: 1200px;
+
+/* fim da formatacao do header e inicio da responsividade do body */
+
+.container-grid{
+    display: flex;
+    border: 1px solid yellow;
+    position: relative;
+    flex-wrap: wrap;
+}
+.logomarca{
+    height: 231px;
+    width: 651px;
+}
+
+.logomarca img{
+    max-width: 932px;
+    max-height: 932px;
+    position: absolute;
+    height: 231px;
+    width: 651px;
+}
+.menu{
+    display:flex;
+    box-sizing: border-box;
+    
+    height: 37vh;
+    width: 115vh;
+    position: relative;
+    justify-content:center;
+    align-items: center;    
+    
+
 
 }
+.box {
+    justify-self: space-around;
+    height:40%;
+    padding: auto;
+    margin: auto;  
+}
+.box-1{
+    
+    background: rgb(35, 60, 107);
+}
+.box-2{
+    
+    background: rgb(120, 173, 34);
+}
+.box-3{
+    
+    background: rgb(145, 81, 204);
+}
+.box-4{
+    
+    background: rgb(36, 124, 139);
+}
+.box-5{
+    
+    background: rgb(192, 31, 165);
+}
+/* fim da edicao do menu e inicio da responsividade */ 
+@media screen and (max-width:1600px){
+       
+}
+@media screen and (max-width:1140px){
+    .logomarca{
+        width: 100%;
+        
 
-.head-part{
-    width: 100%;
-    height: auto;
-    margin: auto;
+    }
+    .logomarca img{
+        width: 1100px;
+       
+    }
+    .menu{
+        width: 155vh;
+        height: 25vh;
+    }
+    
+}
+@media screen and (max-width: 920px){   
+    body{
+        
+    }
+    .logomarca img{
+        max-width: 1000px;
+        max-height: 1000px;
+        width: auto;
+        height: auto;
+    }
+    .menu{
+        display: flex;
+        height: 350px;
+        padding-top: 230px;
+    }
+}
+@media screen and  (max-width:720px){
+    .container-grid{
+        width: 185px;
+        height: 1000px;
+    }
+}
+@media screen and  (max-width:540px){
+     .container-grid{
+        grid-template-rows: ;
+        height: 750px;
+        border: 2px solid green;
+    }
+}
 
-}
-.logo{
-     width: 300px;
-     height: 147px;
-     background: #d40031;
-     float: left;
-}
-.head-phone-email{
-    width: 883px;
-    height: 147px;
-    background: #d40031;
-    float:left;
-    margin-left: 17px;
-}
+
+
