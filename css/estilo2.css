@@ -67,7 +67,10 @@ li h5 :hover{
 
 }
 .box {
+    
     justify-self: space-around;
+    
+
     height:40%;
     padding: auto;
     margin: auto;  
@@ -97,49 +100,83 @@ li h5 :hover{
        
 }
 @media screen and (max-width:1140px){
-    .logomarca{
-        width: 100%;
-        
+    /* IPAD */
 
+    
+    .logomarca{
+        width: 100%; 
     }
     .logomarca img{
         width: 1100px;
+        
        
     }
     .menu{
         width: 155vh;
-        height: 25vh;
+        height: 10vh;
     }
     
 }
 @media screen and (max-width: 920px){   
-    body{
-        
+    .logomarca{
+        width: 100%; 
     }
     .logomarca img{
-        max-width: 1000px;
-        max-height: 1000px;
-        width: auto;
-        height: auto;
+        width: 760px;
+        
+       
     }
     .menu{
-        display: flex;
-        height: 350px;
-        padding-top: 230px;
+        width: 155vh;
+        height: 10vh;
     }
 }
 @media screen and  (max-width:720px){
-    .container-grid{
-        width: 185px;
-        height: 1000px;
+    .logomarca{
+        width: 100%; 
+    }
+    .logomarca img{
+        width: 370px;
+        
+       
+    }
+    .menu{
+        width: 155vh;
+        height: 10vh;
     }
 }
 @media screen and  (max-width:540px){
-     .container-grid{
-        grid-template-rows: ;
-        height: 750px;
-        border: 2px solid green;
+    .logomarca{
+        width: 100%; 
     }
+    .logomarca img{
+        width: 370px;
+        
+       
+    }
+    .menu{
+        width: 155vh;
+        height: 10vh;
+    }   
+}
+
+@media screen and (max-width:360px;){
+    
+   
+    .container-grid{
+        width:322px;
+        
+    }
+    .logomarca{
+        width: 100%; 
+    }
+    .logomarca img{
+        width: 200px;    
+    }
+    .menu{
+        width: 170vh;
+        height: 10vh;
+    }  
 }
 
 
