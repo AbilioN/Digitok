@@ -35,6 +35,9 @@ li h5 :hover{
 
 /* fim da formatacao do header e inicio da responsividade do body */
 
+body{
+    background-image: url(../imagens/globo.jpg);
+}
 .container-grid{
     display: flex;
     /* border: 4px solid yellow; */
@@ -69,10 +72,14 @@ li h5 :hover{
     align-items: center;    
 }
 .box {
+    width: 16%;
+
+
     justify-self: space-around;
     height:40%;
     padding: auto;
     margin: auto;  
+
 }
 .box-1{
     background: rgb(35, 60, 107);
@@ -120,7 +127,8 @@ li h5 :hover{
         margin-right: 0;
         margin-left: 0;
         flex-wrap: wrap;
-        
+        margin-right: 7%;
+        margin-left: 7%;
     }
     .logomarca{
         width: 134vh;
@@ -136,8 +144,8 @@ li h5 :hover{
     
 @media screen and (max-width:1000px){
     .container-grid{
-        margin-right: 2vh;
-        margin-left: 2vh;
+        margin-right: 7%;
+        margin-left: 7%;
         flex-wrap: wrap;
         
     }
@@ -159,8 +167,8 @@ li h5 :hover{
 }
 @media screen and (max-width: 920px){   
     .container-grid{
-        margin-right: 2vh;
-        margin-left: 2vh;
+        margin-right: 7%;
+        margin-left: 7%;
         flex-wrap: wrap;
         
     }
@@ -177,8 +185,8 @@ li h5 :hover{
 }
 @media screen and  (max-width:720px){
     .container-grid{
-        margin-right: 2vh;
-        margin-left: 2vh;
+        margin-right: 7%;
+        margin-left: 7%;
         flex-wrap: wrap;
         
     }
@@ -197,8 +205,8 @@ li h5 :hover{
 @media screen and  (max-width:540px){
 
     .container-grid{
-        margin-right: 2vh;
-        margin-left: 2vh;
+        margin-right: 7%;
+        margin-left: 7%;
         flex-wrap: wrap;
         
     }
@@ -210,14 +218,14 @@ li h5 :hover{
     }
     .menu{
         width: 155vh;
-        height: 8vh;
+        height: 9vh;
     }   
 }
 
 @media screen and (max-width:360px;){
     .container-grid{
-        margin-right: 2vh;
-        margin-left: 2vh;
+        margin-right: 7%;
+        margin-left: 7%;
         flex-wrap: wrap;
         width:322px;  
     }
@@ -229,10 +237,9 @@ li h5 :hover{
     }
     .menu{
         width: 170vh;
-        height: 7vh;
-        
+        height: 8vh;
     }  
 }
 
-
+/* Fim da responsividade do menu principal */
 
