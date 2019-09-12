@@ -38,6 +38,8 @@ li h5 :hover{
 
 body{
     background-image: url(../imagens/globo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .container-grid{
     display: flex;
