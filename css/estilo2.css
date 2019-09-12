@@ -37,94 +37,138 @@ li h5 :hover{
 
 .container-grid{
     display: flex;
-    border: 1px solid yellow;
+    /* border: 4px solid yellow; */
     position: relative;
     flex-wrap: wrap;
+    
+    
 }
 .logomarca{
     height: 231px;
-    width: 651px;
+    
+    flex-grow: 2;
 }
 
 .logomarca img{
-    max-width: 932px;
-    max-height: 932px;
-    position: absolute;
-    height: 231px;
-    width: 651px;
+    max-width: 1200px;
+    max-height: 1200px;
+  
+    width: 100%;
+    
+   
 }
 .menu{
     display:flex;
     box-sizing: border-box;
     
+    flex-grow:3; 
     height: 37vh;
-    width: 115vh;
+    width: 100%;
     position: relative;
     justify-content:center;
     align-items: center;    
-    
-
-
 }
 .box {
-    
     justify-self: space-around;
-    
-
     height:40%;
     padding: auto;
     margin: auto;  
 }
 .box-1{
-    
     background: rgb(35, 60, 107);
 }
 .box-2{
-    
     background: rgb(120, 173, 34);
 }
 .box-3{
-    
     background: rgb(145, 81, 204);
 }
 .box-4{
-    
     background: rgb(36, 124, 139);
 }
 .box-5{
-    
     background: rgb(192, 31, 165);
 }
 /* fim da edicao do menu e inicio da responsividade */ 
-@media screen and (max-width:1600px){
+@media screen and (max-width:1920px){
+    .container-grid{
+       flex-wrap: nowrap;
+       margin-right: 7%;
+       margin-left: 7%;
+    }
+    .menu{
+        /* border: 3px solid black; */
        
-}
-@media screen and (max-width:1140px){
-    /* IPAD */
-
-    
+    }
     .logomarca{
-        width: 100%; 
+        
+        height: 37vh;
+        width: 90vh;
+        
+    }
+   .logomarca img{
+       height: 100%;
+       width: 100%;
+        
+   }
+   
+
+}
+
+@media screen and (max-width: 1200px){
+    .container-grid{
+        margin-right: 0;
+        margin-left: 0;
+        flex-wrap: wrap;
+        
+    }
+    .logomarca{
+        width: 134vh;
     }
     .logomarca img{
-        width: 1100px;
+        width: 100%;
+        height: 37vh;
+    }
+    .menu{
+        height: 15vh;
+    }
+}
+    
+@media screen and (max-width:1000px){
+    .container-grid{
+        margin-right: 2vh;
+        margin-left: 2vh;
+        flex-wrap: wrap;
         
-       
+    }
+    .logomarca{
+        width: 100%; 
+        
+
+     
+    }
+    .logomarca img{
+        width: 100%;
+        height: 340px;
+      
     }
     .menu{
         width: 155vh;
-        height: 10vh;
+        height: 12vh;
     }
-    
 }
 @media screen and (max-width: 920px){   
+    .container-grid{
+        margin-right: 2vh;
+        margin-left: 2vh;
+        flex-wrap: wrap;
+        
+    }
     .logomarca{
-        width: 100%; 
+        width: 920px; 
     }
     .logomarca img{
-        width: 760px;
-        
-       
+        width: 100%   
     }
     .menu{
         width: 155vh;
@@ -132,50 +176,61 @@ li h5 :hover{
     }
 }
 @media screen and  (max-width:720px){
+    .container-grid{
+        margin-right: 2vh;
+        margin-left: 2vh;
+        flex-wrap: wrap;
+        
+    }
     .logomarca{
-        width: 100%; 
+
+        width: 720px; 
     }
     .logomarca img{
-        width: 370px;
-        
-       
+        width: 100%;  
     }
     .menu{
         width: 155vh;
-        height: 10vh;
+        height: 9vh;
     }
 }
 @media screen and  (max-width:540px){
+
+    .container-grid{
+        margin-right: 2vh;
+        margin-left: 2vh;
+        flex-wrap: wrap;
+        
+    }
     .logomarca{
-        width: 100%; 
+        width: 540px; 
     }
     .logomarca img{
-        width: 370px;
-        
-       
+        width: 100%; 
     }
     .menu{
         width: 155vh;
-        height: 10vh;
+        height: 8vh;
     }   
 }
 
 @media screen and (max-width:360px;){
-    
-   
     .container-grid{
-        width:322px;
-        
+        margin-right: 2vh;
+        margin-left: 2vh;
+        flex-wrap: wrap;
+        width:322px;  
     }
     .logomarca{
-        width: 100%; 
+        width: 60px; 
     }
     .logomarca img{
-        width: 200px;    
+        width: 100%;    
     }
     .menu{
         width: 170vh;
-        height: 10vh;
+        height: 7vh;
+        
     }  
 }
 
