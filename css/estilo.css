@@ -289,6 +289,7 @@ body{
     height: 55vh;
     margin-right: 10%;
     margin-left: 10%;
+    margin-top: 3vh;
     background: white;
     position: relative;
     border: 2px solid black;
@@ -340,3 +341,27 @@ body{
     color: white;
 }
 
+.carro{
+    height: 12vh;
+}
+.anuncio{
+    display:flex;
+    margin-top: 2vh;
+
+    height: 15vh;
+    width: 65vh;
+    
+    background: white;
+}
+.anuncio img{
+    height: 100%;
+    width: 30%;
+
+}
+.anuncio-texto{
+    margin-left: 2vh;
+}
+
+.anunciobotao{
+    
+}
