@@ -284,4 +284,59 @@ body{
 
 /* Fim da responsividade do menu principal */
 
+.conteudoprincipal{
+    display: flex;
+    height: 55vh;
+    margin-right: 10%;
+    margin-left: 10%;
+    background: white;
+    position: relative;
+    border: 2px solid black;
+
+
+}
+
+
+.empresa{
+    position: relative;
+    flex-grow: 3;
+    height: 50vh;
+    width: 100%;
+    
+    margin-top: 2%;
+    margin-left: 2%;
+    
+}
+.empresa img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.conteudoempresa{
+    position: relative;
+    margin-top:2%;
+    margin-left: 2%;
+    flex-grow: 2;
+   
+}
+
+/* fim do conteudo de pagina e inicio do footer */
+
+.footerslimbar{
+    height: 5vh;
+    width: 100%;
+    background-color:rgb(244, 233, 3); 
+}
+.footerbar{
+    height: 25vh;
+    width: 100%;
+    background-color: rgb(41,21,116);
+
+}
+
+
+.footerbar h5{
+    color: white;
+}
 
