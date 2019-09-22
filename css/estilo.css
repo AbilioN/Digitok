@@ -287,29 +287,44 @@ body{
 .conteudoprincipal{
     display: flex;
     height: 55vh;
-    margin-right: 10%;
-    margin-left: 10%;
     margin-top: 3vh;
     background: white;
     position: relative;
     border: 2px solid black;
-
-
+    width: 100%;
+    padding: 15px;
 }
 
+
+
+/* tiago */
+
+@media (max-width: 560px) { /* dica: troque tudo para min-width */
+
+    .conteudoprincipal {
+        flex-direction: column;
+    }
+    .conteudoprincipal .empresa {
+        width: 100%;
+        /* position: relative; */
+    }
+    .conteudoprincipal .empresa img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* fim tiago */
 
 .empresa{
     position: relative;
     flex-grow: 3;
     height: 50vh;
     width: 100%;
-    
     margin-top: 2%;
-    margin-left: 2%;
-    
 }
 .empresa img{
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
 }
@@ -319,7 +334,15 @@ body{
     margin-top:2%;
     margin-left: 2%;
     flex-grow: 2;
-   
+}
+
+/* inicio de responsividade do conteudo principal */
+@media screen and (max-width:360px){
+    body{
+
+        border: 2px solid red;
+        height: 100%;
+    }
 }
 
 /* fim do conteudo de pagina e inicio do footer */
@@ -333,10 +356,7 @@ body{
     height: 25vh;
     width: 100%;
     background-color: rgb(41,21,116);
-
 }
-
-
 .footerbar h5{
     color: white;
 }
@@ -347,16 +367,13 @@ body{
 .anuncio{
     display:flex;
     margin-top: 2vh;
-
     height: 15vh;
     width: 65vh;
-    
     background: white;
 }
 .anuncio img{
     height: 100%;
     width: 30%;
-
 }
 .anuncio-texto{
     margin-left: 2vh;
