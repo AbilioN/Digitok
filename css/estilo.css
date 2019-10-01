@@ -40,6 +40,7 @@ li h5 :hover{
 
 html, body{
     height: 100%;
+    
 }
 
 .background-image {
@@ -57,20 +58,18 @@ html, body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    border: 10px solid purple;
 }
 .container-grid{
     display: flex;
-    /* border: 4px solid yellow; */
+    border: 4px solid yellow;
     position: relative;
     flex-wrap: wrap;
-    height: 100%;
-  
-    
-    
 }
 .logomarca{
     height: 4vh;
     flex-grow: 1;
+    border: 2px solid black;    
 }
 
 .logomarca img{
@@ -93,6 +92,7 @@ html, body{
     position: relative;
     justify-content:center;
     align-items: center; 
+    border: 2px solid red;
      
 }
 .box {
@@ -244,6 +244,8 @@ html, body{
         left: 0;
         width: 155vh;
         height: 9vh;
+        top:0;
+        
     }
     .menu a{
         font-size: 1.5em;
@@ -272,6 +274,7 @@ html, body{
         border-radius: 0px;
         right: 0;
         left: 0;
+        top:0;
         
         
     }
@@ -299,6 +302,7 @@ html, body{
         height: 8vh;
         border-radius: 0px;
         position: relative;
+        top:0;
 
     }  
 }
@@ -359,7 +363,7 @@ html, body{
     margin-bottom: 3vh;
     background: white;
     position: relative;
-    border: 2px solid black;
+    
     width: 100%;
     padding: 15px;
 }
@@ -400,8 +404,67 @@ html, body{
         height: auto;
     }
 } */
-@media (max-width: 920px){
+@media (max-width:1920px){
+    .conteudoprincipal{
+        height: 70vh;
+
+
+    }
+    .conteudoempsesa{
+        height: 100%;
     
+    }
+    .conteudoprincipal .empresa{
+        width: 100%;
+
+    }
+    .conteudoprincipal .empresa img{
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 1200px){
+    .conteudoprincipal{
+        height: 50vh;
+
+
+    }
+    .conteudoempsesa{
+        height: 100%;
+    
+    }
+    .conteudoprincipal .empresa{
+        width: 100%;
+
+    }
+    .conteudoprincipal .empresa img{
+        width: 50vh;
+        margin: auto;
+        height: auto;
+    }
+}
+@media (max-width: 920px){
+    .conteudoprincipal{
+        height: 50vh;
+
+
+    }
+    .conteudoempsesa{
+        height: 100%;
+    
+    }
+    .conteudoprincipal .empresa{
+        width: 100%;
+
+    }
+    .conteudoprincipal .empresa img{
+        width: 60vh;
+        margin: auto;
+        height: auto;
+    }
+
 }
 @media (max-width: 720px){
 
@@ -414,11 +477,11 @@ html, body{
         height: 100%;
     }
     .conteudoprincipal .empresa {
-        width: 100%;
+        width: 800%;
         /* position: relative; */
     }
     .conteudoprincipal .empresa img {
-        width: 50vh;
+        width: 60vh;
         height: 100%;
     }
 
@@ -428,7 +491,7 @@ html, body{
 @media (max-width: 540px) { /* dica: troque tudo para min-width */
     .conteudoprincipal {
         flex-direction: column;
-        height: 65vh; 
+        height: 70vh; 
     }
     .conteudoempresa{
         top: 10px;
@@ -463,8 +526,30 @@ footer {
     background-color:rgb(244, 233, 3); 
 }
 .footerbar{
+    display: flex;
+    position: absolute;
+    
     height: 25vh;
     width: 100%;
     background-color: rgb(41,21,116);
+    justify-content: center;
+   
 }
+.footerinfo{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    justify-content: center;
+   
+    
+    border: 2px solid red;
+}
+.footerinfo h2, .footerinfo h3,.footerinfo h4,.footerinfo h5{
+    
+    align-self: center;
+    justify-self: center;
+    color: white;
+    
 
+}
+   
