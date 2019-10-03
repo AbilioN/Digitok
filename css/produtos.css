@@ -22,11 +22,16 @@ a{
 
 
 .produtosconteudo{
+    display: flex;
+    
+    
     margin-top: 5vh;
     width: auto;
+    margin-left: 10vh;
+    margin-right: 10vh;
     height: 80vh;
     border: 5px solid blue;
-    position: relative;
+    position: relative;    
 }
 
 .conteudos-menu {
@@ -44,20 +49,23 @@ a{
     flex-wrap: wrap;
     height: auto;
     width: 20vh;
-    margin-left: 10vh;
+    margin-left: 5vh;
     margin-top: 10vh;
-    position: absolute;
+    /* margin-bottom: 40vh; */
+    position: relative;
 }
 .menu-produtos{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #222;
     width: 100%;
+    transition-property: all;
    
 
 }
 .menu-produtos ul{
     list-style: none;
     position: relative;
+    transition-property: all;
    
 }
 .menu-produtos ul ul{
@@ -66,20 +74,30 @@ a{
     visibility: hidden;
     background: #333;
     position: relative;
+    transition-property: all;
+    display: none;
+    transition-duration: 1s;
+    
     
 } 
 .menu-produtos ul li:hover ul{
     visibility: visible;
+    display: unset;
+    transition-duration: 1s;
+   
+    
+    
 }
 .menu-produtos ul li{
     float: left;
     border: 2px solid pink;
     height: auto;
     width: 100%;
+    
 }
 .menu-produtos ul li a {
     padding: 10px;
-    /* display: block; */
+    display: block;
     text-decoration: none;
     text-align: center;
     color: #FFF;
@@ -105,14 +123,25 @@ a{
     position: relative;
 }
 .teste2{
-    display: flex;
-    height: 30vh;
-    position: relative;
+   
+    
+    
 }
 .sub-menu{
+    
+    height: auto;
     position: relative;
-    border: 2px solid yellowgreen;
+    
 }
 .sub-item-menu{
-    border: 2px solid blue;
+    
 }
+
+.produtos-grid{
+    
+    margin-top: 10vh;
+    border: 2px solid green;
+    height: 100%;
+    width: 100%;
+}
+
