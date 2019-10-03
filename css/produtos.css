@@ -29,7 +29,8 @@ a{
     width: auto;
     margin-left: 10vh;
     margin-right: 10vh;
-    height: 80vh;
+    margin-bottom: 10vh;
+    height: auto;
     border: 5px solid blue;
     position: relative;    
 }
@@ -49,10 +50,11 @@ a{
     flex-wrap: wrap;
     height: auto;
     width: 20vh;
-    margin-left: 5vh;
+    margin-bottom: auto;
+    
     margin-top: 10vh;
     /* margin-bottom: 40vh; */
-    position: relative;
+    /* position: relative; */
 }
 .menu-produtos{
     font-family: Arial, Helvetica, sans-serif;
@@ -138,10 +140,10 @@ a{
 }
 
 .produtos-grid{
-    
+    position: relative;
     margin-top: 10vh;
-    border: 2px solid green;
-    height: 100%;
+    border: 3px solid green;
+    height: 80vh;
     width: 100%;
 }
 
